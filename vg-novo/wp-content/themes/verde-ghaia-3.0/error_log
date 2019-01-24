@@ -1,0 +1,1 @@
+[17-Sep-2018 08:35:58 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/verdeghaia/public_html/wp-content/themes/verde-ghaia-3.0/index.php on line 15

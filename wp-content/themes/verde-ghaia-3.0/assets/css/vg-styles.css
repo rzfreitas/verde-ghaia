@@ -1646,6 +1646,19 @@ h2.comments-title{
 	.click-wpp img{float: left;}
 	.click-wpp div{padding: 10px 0 10px 40px;}
 	/* / */
+	/* one signal */
+	#onesignal-bell-container.onesignal-reset.onesignal-bell-container-bottom-left{
+		bottom: auto!important;
+    	left: auto!important;
+    	top: 0px;
+    	right: 0px;
+	}
+	#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-bottom-left{
+		bottom: auto!important;
+    	left: auto!important;
+    	top: 5px;
+    	right: 20px;
+	}
 }
 @media (min-width: 320px) and (max-width: 480px) {  
   .fix-header{height: 77px}

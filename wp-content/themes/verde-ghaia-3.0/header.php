@@ -99,12 +99,11 @@
 
 							<div class="hidden-xs">
 								<?php get_template_part('search-form'); ?>
-							</div>
-						
-						<div class="visible-sm visible-xs p-t-20">
-							<span class="menu-mob" id="openNav">&#9776;</span>
+							</div>						
 						</div>
-					</div>			
+					<div class="visible-sm visible-xs p-t-10 text-center">
+						<span class="menu-mob" id="openNav">&#9776;</span>
+					</div>		
 				</div>
 			</div>
 

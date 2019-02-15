@@ -276,8 +276,8 @@ get_header(); ?>
 </section> -->
 
 <script>    
-    jQuery('#leiaMais').on('click', function(e) {
-      jQuery('.text-hide').toggleClass("show-hide-text");
+    $('#leiaMais').on('click', function(e) {
+      $('.text-hide').toggleClass("show-hide-text");
       e.preventDefault();
     });
 </script>

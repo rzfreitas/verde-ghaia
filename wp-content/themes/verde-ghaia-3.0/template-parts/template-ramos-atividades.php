@@ -16,7 +16,7 @@
 			<div class="row">
 			  	<div class="col-md-7">
 		  			<h1><strong><?php the_field('title_banner'); ?></strong></h1>
-		   			<p class="p-t-25 p-b-25"><?php the_field('text_banner'); ?></p>		   			
+		   			<div class="p-t-25 p-b-25 l-disc"><?php the_field('text_banner'); ?></div>		   			
 		   			<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
 						<a href="" class="btn-round btn-ga">Contrate agora</a>
 						<?php elseif ( get_field('select_page') == 's_alimentos' ): ?>

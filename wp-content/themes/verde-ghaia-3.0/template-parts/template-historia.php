@@ -68,19 +68,19 @@ get_header(); ?>
 			<div class="col-md-4 text-center">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/empresas-do-grupo/missao.png" alt="missao verde ghaia">
 				<h3 class="p-t-25 p-b-25"><strong>Missão</strong></h3>
-				<p class="text-justify">Ser referência em Inovação e Sustentabilidade, através de metodologias criativas, conectadas com o futuro e atentas a total capacidade de fazer mais rápido, melhor e mais barato. Ser firme na Lei da Causa e do Propósito,  não duvidando do futuro e fazendo parte de uma grande revolução tecnológica</p>
+				<p class="text-justify">Oferecer metodologias e indicadores para a sustentabilidade através de processos cada vez mais rápidos, melhores e mais baratos.</p>
 			</div>
 			<div class="col-md-4 text-center">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/empresas-do-grupo/valores.png" alt="valores verde ghaia">
 				<h3 class="p-t-25 p-b-25"><strong>Valores</strong></h3>
-				<p class="text-justify">PROPÓSITO: Confiança, Transparência e Resiliência, como questões essenciais para as relações entre pessoas e as empresas.<br>
-					INOVAÇÃO: Não duvidar que é sempre possível inovar.<br>
-					SUSTENTABILIDADE: Garantir a promoção da ética, da cidadania e transparência em suas relações.</p>
+				<p class="text-justify">PROPÓSITO: Prezamos a confiança, simplicidade, transparência e colaboração como questões essenciais nas relações.<br>
+					INOVAÇÃO: Acreditamos que é sempre possível inovar.<br>
+					SUSTENTABILIDADE: Entendemos que a sustentabilidade só é possível  com o cumprimento da legislação aplicável (compliance).</p>
 			</div>
 			<div class="col-md-4 text-center">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/empresas-do-grupo/visao.png" alt="visao verde ghaia">
 				<h3 class="p-t-25 p-b-25"><strong>Visão</strong></h3>
-				<p class="text-justify">Até 2021, ser referência em metodologias conectadas com o futuro e líder em gestão de riscos sustentabilidade, através de processos cada vez mais rápidos, melhores e mais baratos.</p>
+				<p class="text-justify">Até 2022, ser líder em gestão de risco e compliance.</p>
 			</div>
 		</div>
 	</div>	

@@ -60,7 +60,7 @@ get_header(); ?>
 			      			<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/contato/guarulhos.png" alt="guarulhos">
 			      			<div class="p-t-20">
 			      				<p class="f-preta">Guarulhos</p>
-			      				<a class="btn-blue" href="mailto:smarcos.guarulhos@verdeghaia.com.br" target="_top">Entre em contato</a>
+			      				<a class="btn-blue" href="mailto:marcos.guarulhos@verdeghaia.com.br" target="_top">Entre em contato</a>
 			      			</div>
 			      		</div>
 			      	</div>
@@ -80,7 +80,7 @@ get_header(); ?>
 			       		<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/contato/recife.png" alt="recife">
 			      		<div class="p-t-20">
 			      			<p class="f-preta">Recife</p>
-			      			<a class="btn-blue">Entre em contato</a>
+			      			<a class="btn-blue" href="mailto:lauro.recife@verdeghaia.com.br" target="_top">Entre em contato</a>
 			      		</div>
 			       </div>
 			    </div>

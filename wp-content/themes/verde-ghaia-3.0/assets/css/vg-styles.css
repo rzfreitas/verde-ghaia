@@ -288,6 +288,7 @@ body{
 .p-b-50{padding-bottom: 50px;}
 .p-t-70{padding-top: 70px;}
 .p-t-100{padding-top: 100px;}
+.p-b-100{padding-bottom: 100px;}
 .p-b-70{padding-bottom: 70px;}
 .float-right{float: right;}
 .float-left{float: left;}
@@ -337,6 +338,9 @@ a.excerpt-read-more {
 	transform: translateY(-50%);
 }
 .banner{position: relative;}
+.align-mid{align-items: center;}
+.f-wrap{flex-wrap: wrap;}
+.l-disc{list-style: disc;}
 /* /MISC */
 
 /* TEXTS */
@@ -519,6 +523,17 @@ a.btn-azul-off-w{color: #2F80ED}
     font-weight: bold;
     display: inline-block;
     cursor: pointer;
+}
+.btn-conversion{
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
 }
 
 a.btn-yellow-curso{color: #333; font-weight: bold;}
@@ -1568,6 +1583,95 @@ h2.comments-title{
 	.click-wpp img{float: left;}
 	.click-wpp div{padding: 10px 0 10px 40px;}
 	/* / */
+
+/* RAMOS ATIVIDADES */
+.bg-banner-footer-ga{
+	background: #5B325A;
+	color: #fff;
+}
+.bg-banner-footer-sa{
+	background: #83ACB3;
+	color: #fff;
+}
+.bg-banner-footer-cc{
+	background: #1DA79F;
+	color: #fff;
+}
+.bg-banner-footer-gh{
+	background: #F2994A;
+	color: #fff;
+}
+.bg-banner-footer-rod{
+	background: #2F80ED;
+	color: #fff;
+}
+
+.bg-row-conversion-ga{
+	background: #DED6DE;
+	color: #333;
+}
+.bg-row-conversion{
+	background: #D2E0E5;
+	color: #333;
+}
+.bg-row-conversion h5, .bg-row-conversion-ga h5{margin: 0; padding-top: 10px}
+
+.btn-round{
+	display: inline-block;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 50px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+a.btn-round{color: #fff;}
+
+.btn-ga{background-color: #9B51E0}
+.btn-sa{background-color: #EB5757}
+.btn-cc{background-color: #1DA79F}
+.btn-gh{background-color: #F2994A}
+.btn-rod{background-color: #2F80ED}
+
+.t-gray{
+	color: #a1a1a1;
+	font-size: 20px;
+	font-weight: 300;
+}
+.bg-last-block-ga{
+	background: rgba(91, 50, 90, 0.2);
+    position: relative;
+}
+.bg-last-block{
+	background: #D2E0E5;
+	position: relative;
+}
+.btn-last-block{
+	display: inline-block;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 700;
+	letter-spacing: 1px;
+	background: #EB5757;
+}
+a.btn-last-block{color: #333;}
+.risks-imgs{
+	position: relative;
+	z-index: 10;
+}
+.bg-last-block-ga::after, .bg-last-block::after{
+	content: '';
+	width: 100%;
+	height: 130px;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 0;
+	right: 0;
+	background: #333;
+}
+/* / */
 
 /* MEDIA QUERY */
 /* desktop*/

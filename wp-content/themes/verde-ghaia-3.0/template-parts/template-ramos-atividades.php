@@ -68,11 +68,11 @@
 	<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
 		<div class="bg-row-conversion-ga">
 			<div class="container p-t-25 p-b-25">
-				<ul class="d-flex align-mid f-wrap space-b">
+				<ul class="d-flex align-mid f-wrap space-b d-flex-mob">
 				<?php if( have_rows('logo_clientes') ): ?>		    
 				    <?php while ( have_rows('logo_clientes') ) : the_row();
 				    	$client_img = get_sub_field('logo_cliente'); ?>
-				        <li class="">
+				        <li class="mob-logos">
 				        	<img src="<?php echo $client_img['url']; ?>" alt="<?php echo $client_img['alt'] ?>" />
 				        </li>
 				    <?php endwhile; ?>
@@ -83,7 +83,7 @@
 		<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
 		<div class="bg-row-conversion">
 			<div class="container p-t-25 p-b-25">
-				<ul class="d-flex align-mid f-wrap space-b">
+				<ul class="d-flex align-mid f-wrap space-b d-flex-mob">
 				<?php if( have_rows('logo_clientes') ): ?>		    
 				    <?php while ( have_rows('logo_clientes') ) : the_row();
 				    	$client_img = get_sub_field('logo_cliente'); ?>
@@ -108,7 +108,7 @@
 			-o-background-size: cover;
 			background-size: cover;
 			height:80vh">
-			<div class="container v-center f-branca">
+			<div class="container v-center f-branca p-t-c p-b-c">
 				<h2><strong><?php the_field('title_banner_2'); ?></strong></h2>
 				<div class="row p-t-25">
 				  	<div class="col-md-6">			  			

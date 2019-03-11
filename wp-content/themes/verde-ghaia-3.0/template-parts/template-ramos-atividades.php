@@ -12,7 +12,7 @@
 		-o-background-size: cover;
 		background-size: cover;
 		height:100vh">
-		<div class="container v-center f-branca">
+		<div class="container v-center f-branca p-t-c">
 			<div class="row">
 			  	<div class="col-md-7">
 		  			<h1><strong><?php the_field('title_banner'); ?></strong></h1>
@@ -87,7 +87,7 @@
 				<?php if( have_rows('logo_clientes') ): ?>		    
 				    <?php while ( have_rows('logo_clientes') ) : the_row();
 				    	$client_img = get_sub_field('logo_cliente'); ?>
-				        <li class="">
+				        <li class="mob-logos">
 				        	<img src="<?php echo $client_img['url']; ?>" alt="<?php echo $client_img['alt'] ?>" />
 				        </li>
 				    <?php endwhile; ?>

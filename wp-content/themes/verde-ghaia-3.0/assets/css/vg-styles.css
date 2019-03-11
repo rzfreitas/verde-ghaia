@@ -1961,6 +1961,10 @@ color:#fff
   }
   li.has-mega-menu-title{border-bottom: 1px solid #fff;}
   .auto-h{height: auto!important;}
+  .mob-logos{
+  	width: 50%;
+    padding: 10px;
+	}
 }
 
 /* MEGA MENU */

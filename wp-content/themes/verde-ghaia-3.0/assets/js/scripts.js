@@ -15,12 +15,12 @@ jQuery(document).ready(function(){
 });
 
 jQuery(document).ready(function(){
-  jQuery('.equipe').slick({
+  jQuery('.slides-four').slick({
    	autoplay: true,
     infinite: true,
     speed: 300,
-  	slidesToShow: 1,
-  	adaptiveHeight: true,
+  	slidesToShow: 4,
+  	slidesToScroll: 4
   });
 });
 
@@ -50,3 +50,15 @@ jQuery(document).ready(function(){
 function handleSelect(elm){
   window.location = elm.value;
 }
+
+jQuery( "li.has-mega-menu" ).hover(function() {
+  var wContainer;
+  wContainer = jQuery(".container").width();
+
+  jQuery("li.has-mega-menu ul.sub-menu").width(wContainer);
+});
+
+$('#leiaMais').on('click', function(e) {
+  $('.text-hide').toggleClass("show-hide-text");
+  e.preventDefault();
+});

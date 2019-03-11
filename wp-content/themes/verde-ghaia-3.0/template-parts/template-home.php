@@ -275,13 +275,6 @@ get_header(); ?>
 	</div>
 </section> -->
 
-<script>    
-    $('#leiaMais').on('click', function(e) {
-      $('.text-hide').toggleClass("show-hide-text");
-      e.preventDefault();
-    });
-</script>
-
 <!-- Modal SOGI -->
 <div class="modal fade" id="modal-sogi" role="dialog">
     <div class="modal-dialog">    

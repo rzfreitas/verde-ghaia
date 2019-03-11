@@ -55,6 +55,7 @@ table {
 	padding: 10px 0;
 	box-shadow: 0 3px 3px 0 rgba(0,0,0,0.22);
 	background-color: rgba(51, 51, 51, 0.5);
+	height: 60px;
 }
 .main-navigation a{
 	color: #fff;
@@ -199,10 +200,10 @@ background-repeat:no-repeat
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 10px 8px 10px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: #fff;
     display: block;
     transition: 0.3s;
 }
@@ -290,6 +291,7 @@ body{
 .p-t-100{padding-top: 100px;}
 .p-b-100{padding-bottom: 100px;}
 .p-b-70{padding-bottom: 70px;}
+.p-t-400{padding-top: 400px;}
 .float-right{float: right;}
 .float-left{float: left;}
 
@@ -332,16 +334,36 @@ a.excerpt-read-more {
 	width: 100%;
 	height: auto;
 }
-.v-center{
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
 .banner{position: relative;}
-.align-mid{align-items: center;}
-.f-wrap{flex-wrap: wrap;}
-.l-disc, .l-disc ul{list-style: disc;}
+.align-mid, .align-c{
+	align-items: center;
+	-webkit-align-items: center;
+    -ms-flex-align: center;
+}
+.f-wrap{
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.l-disc ul, ul.l-disc {
+    list-style: disc;
+    padding-left: 20px;
+}
 .l-disc li{margin-bottom: 15px;}
+.space-b{
+	-webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.dot, ul.disc-fake li:before{
+	content: "";
+    height: 5px;
+    width: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
 /* /MISC */
 
 /* TEXTS */
@@ -1591,7 +1613,7 @@ h2.comments-title{
 	background: #5B325A;
 	color: #fff;
 }
-.bg-banner-footer-sa{
+.bg-banner-footer-va{
 	background: #83ACB3;
 	color: #fff;
 }
@@ -1630,7 +1652,7 @@ h2.comments-title{
 a.btn-round{color: #fff;}
 
 .btn-ga{background-color: #9B51E0}
-.btn-sa{background-color: #EB5757}
+.btn-va{background-color: #EB5757}
 .btn-cc{background-color: #1DA79F}
 .btn-gh{background-color: #F2994A}
 .btn-rod{background-color: #2F80ED}
@@ -1672,6 +1694,124 @@ a.btn-last-block{color: #333;}
 	left: 0;
 	right: 0;
 	background: #333;
+}
+/* / */
+
+/* AVIAÇAO */
+
+.img-topo {
+background-image:url(../imagens/aviacao/aviacao-civil.jpg);
+background-position:center center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+height:600px;
+color:#fff
+}
+.img-topo h2, .img-topo h3, .img-topo h1{margin-bottom: 15px;}
+.img-topo li {
+font-size:20px
+}
+
+.faixa-cinza {
+background-color:#707E8B;
+padding:30px 0;
+color:#fff
+}
+
+.faixa-cinza p {
+margin:0;
+font-size:24px
+}
+
+.topicos p {
+font-size:20px
+}
+
+.topicos ul{
+	display: flex;
+	flex-flow: row wrap;
+	list-style: disc;
+	padding: 0;
+	margin: 0;
+	justify-content: space-around;
+}
+.topicos ul li {
+	width: 25%;
+	font-size: 16px;
+	margin-right: 10px;
+    padding: 20px;
+    line-height: 1.5;
+}
+.topicos-block{padding: 15px;}
+
+#vantagem-tab {
+background-color:#707E8B!important;
+padding:0!important;
+border:0
+}
+
+#vantagem-tab tbody {
+background-color:#707E8B!important
+}
+
+.vantagem {
+font-size:18px;
+font-weight:300;
+background-color:#707E8B;
+color:#fff
+}
+
+.vantagem p {
+margin-left:12px
+}
+
+.img-bot {
+background-image:url(../imagens/aviacao/aeroporto1.jpg);
+background-position:center center;
+background-repeat:no-repeat;
+background-size:cover;
+height:850px;
+color:#fff
+}
+
+.img-bot p {
+font-size:20px
+}
+
+.img-bot li {
+font-size:20px
+}
+
+.faixa-conversion {
+background-color:#00748d;
+color: #fff;
+}
+.faixa-conversion .new-button-round {
+display:inline-block;
+vertical-align:middle;
+padding:10px 20px;
+border:1px solid transparent;
+border-radius:50px;
+-webkit-transition:background-color .25s ease-out,color .25s ease-out;
+transition:background-color .25s ease-out,color .25s ease-out;
+text-align:center;
+cursor:pointer;
+background-color:#fff;
+color:#00748d;
+font-size:16px;
+border:2px solid #00748d
+}
+
+.new-button-round:hover {
+color:#fff;
+background-color:#00748d;
+text-decoration:none;
+border:2px solid #fff
+}
+
+.new-button-round:hover,focus a {
+color:#fff
 }
 /* / */
 
@@ -1788,9 +1928,75 @@ a.btn-last-block{color: #333;}
     	top: 5px;
     	right: 20px;
 	}
+	li.has-mega-menu ul.sub-menu{
+	    left: 0%!important;
+	    margin: auto;
+	    margin-left: -23%;
+	    top: 31px;
+	    position: fixed;
+	    padding: 20px;
+	    background: rgba(255,255,255,.95);
+	}
+	li.has-mega-menu > ul.sub-menu a, li.has-list-menu ul.sub-menu a{
+		color: #333;
+	}
+	li.has-list-menu ul.sub-menu{
+		background: rgba(255,255,255,.95);
+	}
+	li.has-mega-menu-title {
+    	width: 33.333%;
+	}
+	.v-center{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 @media (min-width: 320px) and (max-width: 480px) {  
-  .fix-header{height: 77px}
+  .fix-header{height: 60px}
   .p-t-c{padding-top: 50px;}
   .p-b-c{padding-bottom: 50px;}
+  li.has-mega-menu ul.sub-menu{
+  	width: auto!important;
+  }
+  li.has-mega-menu-title{border-bottom: 1px solid #fff;}
+  .auto-h{height: auto!important;}
+}
+
+/* MEGA MENU */
+li.has-mega-menu:after, li.has-list-menu:after{
+	content: '\f078';
+    font-family: FontAwesome!important;
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    font-size: 8px;
+}
+li.has-mega-menu ul.sub-menu, li.has-list-menu ul.sub-menu{
+    visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+    transition: .5s;
+    height: 0px;
+}
+li.has-mega-menu:hover ul.sub-menu, li.has-list-menu:hover ul.sub-menu{
+	visibility: visible;
+  	opacity: 1;
+  	height: auto;
+}
+li.has-mega-menu-title ul.sub-menu{
+	display: block!important;
+    width: auto!important;
+    position: relative;
+    column-count: auto;
+    padding: 20px 0;
+    box-shadow: none;
+    left: auto!important;
+    top: auto;
+    margin: 0;
+    background: transparent;
+}
+li.has-mega-menu-title ul.sub-menu li{
+	padding-left: 0;
 }

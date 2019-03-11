@@ -41,7 +41,7 @@
 							</div>
 
 							<div class="nav-border">
-								<nav id="site-navigation" class="hidden-xs main-navigation">
+								<nav class="hidden-xs main-navigation">
 								<?php
 								wp_nav_menu( array(
 									'theme_location' => 'menu-1',

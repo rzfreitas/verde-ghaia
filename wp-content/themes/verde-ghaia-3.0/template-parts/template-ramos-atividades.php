@@ -11,7 +11,7 @@
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		height:80vh">
+		height:100vh">
 		<div class="container v-center f-branca">
 			<div class="row">
 			  	<div class="col-md-7">
@@ -19,8 +19,8 @@
 		   			<div class="p-t-25 p-b-25 l-disc"><?php the_field('text_banner'); ?></div>		   			
 		   			<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
 						<a href="" class="btn-round btn-ga">Contrate agora</a>
-						<?php elseif ( get_field('select_page') == 's_alimentos' ): ?>
-						<a href="" class="btn-round btn-sa">Contrate agora</a>
+						<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
+						<a href="" class="btn-round btn-va" data-toggle="modal" data-target="#aviacao">Contrate agora</a>
 						<?php elseif ( get_field('select_page') == 'cons_civil' ): ?>
 						<a href="" class="btn-round btn-cc">Contrate agora</a>
 						<?php elseif ( get_field('select_page') == 'g_hosp' ): ?>
@@ -37,8 +37,8 @@
 </div>
 	<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
 		<div class="bg-banner-footer-ga">
-		<?php elseif ( get_field('select_page') == 's_alimentos' ): ?>
-		<div class="bg-banner-footer-sa">
+		<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
+		<div class="bg-banner-footer-va">
 		<?php elseif ( get_field('select_page') == 'cons_civil' ): ?>
 		<div class="bg-banner-footer-cc">
 		<?php elseif ( get_field('select_page') == 'g_hosp' ): ?>
@@ -55,7 +55,7 @@
 <section>
 	<div class="container p-t-100 p-b-100">
 		<h2><?php the_field('title_2') ?></h2>
-		<ul class="d-flex align-mid f-wrap l-disc p-t-50">
+		<ul class="d-flex disc-fake f-wrap p-t-50">
 		<?php if( have_rows('diretrizes') ): ?>		    
 		    <?php while ( have_rows('diretrizes') ) : the_row(); ?>
 		        <li class="col-12 col-md-4 p-t-25 p-b-25"><?php the_sub_field('t_diretriz'); ?></li>
@@ -65,39 +65,44 @@
 </section>
 
 <section>
-	<?php if ( get_field('select_page') == 'g_alimentos' ) { ?>
+	<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
 		<div class="bg-row-conversion-ga">
-		<?php } else { ?>
-		<div class="bg-row-conversion">
-	<?php } ?>
-		<div class="container p-t-25 p-b-25">
-			<div class="row">
-				<div class="col-12 col-md-9">
-					<h5><?php the_field('t_conversion'); ?> </h5>
-				</div>
-				<div class="col-12 col-md-3">
-					<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
-						<a href="" class="btn-round btn-ga">Baixar apresentação</a>
-						<?php elseif ( get_field('select_page') == 's_alimentos' ): ?>
-						<a href="" class="btn-round btn-sa">Contrate agora!</a>
-						<?php elseif ( get_field('select_page') == 'cons_civil' ): ?>
-						<a href="" class="btn-round btn-cc">Contrate agora!</a>
-						<?php elseif ( get_field('select_page') == 'g_hosp' ): ?>
-						<a href="" class="btn-round btn-gh">Contrate agora!</a>
-						<?php elseif ( get_field('select_page') == 'rodovias' ): ?>
-						<a href="" class="btn-round btn-rod">Contrate agora!</a>
-					<?php endif ?>
-				</div>
+			<div class="container p-t-25 p-b-25">
+				<ul class="d-flex align-mid f-wrap space-b">
+				<?php if( have_rows('logo_clientes') ): ?>		    
+				    <?php while ( have_rows('logo_clientes') ) : the_row();
+				    	$client_img = get_sub_field('logo_cliente'); ?>
+				        <li class="">
+				        	<img src="<?php echo $client_img['url']; ?>" alt="<?php echo $client_img['alt'] ?>" />
+				        </li>
+				    <?php endwhile; ?>
+				</ul>
+				<?php else : endif; ?>
 			</div>
 		</div>
-	</div>
+		<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
+		<div class="bg-row-conversion">
+			<div class="container p-t-25 p-b-25">
+				<ul class="d-flex align-mid f-wrap space-b">
+				<?php if( have_rows('logo_clientes') ): ?>		    
+				    <?php while ( have_rows('logo_clientes') ) : the_row();
+				    	$client_img = get_sub_field('logo_cliente'); ?>
+				        <li class="">
+				        	<img src="<?php echo $client_img['url']; ?>" alt="<?php echo $client_img['alt'] ?>" />
+				        </li>
+				    <?php endwhile; ?>
+				</ul>
+				<?php else : endif; ?>
+			</div>
+		</div>
+	<?php endif; ?>
 </section>
 
 <section>
 	<div class="banner">
 		<?php $image = get_field('img_banner_2');
 		if( !empty($image) ): ?>
-			<div style="background: url(<?php echo $image['url']; ?>) no-repeat center center fixed;    
+			<div class="auto-h" style="background: url(<?php echo $image['url']; ?>) no-repeat center center fixed;    
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -115,6 +120,35 @@
 			   	</div>
 			</div>	
 		<?php endif; ?>
+	</div>
+</section>
+
+<section>
+	<?php if ( get_field('select_page') == 'g_alimentos' ) { ?>
+		<div class="bg-row-conversion-ga">
+		<?php } else { ?>
+		<div class="bg-row-conversion">
+	<?php } ?>
+		<div class="container p-t-25 p-b-25">
+			<div class="row">
+				<div class="col-12 col-md-9">
+					<h5><?php the_field('t_conversion'); ?> </h5>
+				</div>
+				<div class="col-12 col-md-3 p-t-c">
+					<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
+						<a href="" class="btn-round btn-ga">Baixar apresentação</a>
+						<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
+						<a href="" class="btn-round btn-va" data-toggle="modal" data-target="#aviacao">Saiba mais!</a>
+						<?php elseif ( get_field('select_page') == 'cons_civil' ): ?>
+						<a href="" class="btn-round btn-cc">Contrate agora!</a>
+						<?php elseif ( get_field('select_page') == 'g_hosp' ): ?>
+						<a href="" class="btn-round btn-gh">Contrate agora!</a>
+						<?php elseif ( get_field('select_page') == 'rodovias' ): ?>
+						<a href="" class="btn-round btn-rod">Contrate agora!</a>
+					<?php endif ?>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -165,10 +199,68 @@
 				</div>
 			</div>
 			<div class="p-t-50 text-center">
-				<a href="" class="btn-last-block">Veja as notícias</a>
+				<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
+					<a href="" class="btn-round btn-ga">Contrate agora</a>
+					<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
+					<a href="" class="btn-round btn-va" data-toggle="modal" data-target="#aviacao">Contrate agora</a>
+					<?php elseif ( get_field('select_page') == 'cons_civil' ): ?>
+					<a href="" class="btn-round btn-cc">Contrate agora</a>
+					<?php elseif ( get_field('select_page') == 'g_hosp' ): ?>
+					<a href="" class="btn-round btn-gh">Contrate agora</a>
+					<?php elseif ( get_field('select_page') == 'rodovias' ): ?>
+					<a href="" class="btn-round btn-rod">Contrate agora</a>
+				<?php endif ?>
 			</div>
 		</div>
 	</div>
 </section>
+
+<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
+	<div class="container p-t-50 p-b-50">
+		<ul class="d-flex align-mid space-b f-wrap text-center slides-four">
+			<?php if( have_rows('logo_clientes_alimentos') ): ?>		    
+			    <?php while ( have_rows('logo_clientes_alimentos') ) : the_row();
+			    	$client_img_alimentos = get_sub_field('logo_cliente_alimentos'); ?>
+			        <li class="col-12 col-md-3">
+			        	<img src="<?php echo $client_img_alimentos['url']; ?>" alt="<?php echo $client_img_alimentos['alt'] ?>" />
+			        </li>
+			    <?php endwhile; ?>
+		</ul>
+			<?php else : endif; ?>
+	</div>
+<?php endif; ?>
+
+<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
+						
+<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
+<!-- Modal Aeroportos -->
+<div class="modal fade" id="aviacao" role="dialog">
+    <div class="modal-dialog">    
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Programa de Compliance Aeroportos</h4>
+			</div>
+			<div class="modal-body">
+				<div role="main" id="contrate-agora-aeroportos-6c4a37e55ff794c52a9e"></div>
+				<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+				<script type="text/javascript">
+				  new RDStationForms('contrate-agora-aeroportos-6c4a37e55ff794c52a9e-html', 'UA-96877999-1').createForm();
+				</script>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>      
+    </div>
+</div>
+
+<?php elseif ( get_field('select_page') == 'cons_civil' ): ?>
+						
+<?php elseif ( get_field('select_page') == 'g_hosp' ): ?>
+						
+<?php elseif ( get_field('select_page') == 'rodovias' ): ?>
+						
+<?php endif ?>
 
 <?php get_footer(); ?>

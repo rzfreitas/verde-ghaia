@@ -112,35 +112,35 @@
 					<div class="submenu-column">
 						<div class="d-inline-flex">
 							<div class="bg-auditoria_interna"></div>
-							<h2>Auditoria Interna</h2>
+							<a href="https://www.verdeghaia.com.br/desempenho-gestao/auditorias-de-sistema-de-gestao/"><h2>Auditoria Interna</h2></a>
 						</div>
 						<a href="https://www.verdeghaia.com.br/desempenho-gestao/auditorias-de-sistema-de-gestao/"><p>Confira anualmente como está seu sistema de gestão e seu controle de leis.</p></a>
 					</div>
 					<div class="submenu-column">
 						<div class="d-inline-flex">
 							<div class="bg-monitoramento_legal"></div>
-							<h2>Controle de leis</h2>
+							<a href="https://sogi.com.br/"><h2>Controle de leis</h2></a>
 						</div>
 						<a href="https://sogi.com.br/"><p>Conheça suas leis aplicáveis e previna os riscos ao seu negócio</p></a>
 					</div>
 					<div class="submenu-column">
 						<div class="d-inline-flex">
-							<div class="bg-certificacao_iso"></div>
-							<h2>Certificação ISO</h2>
+							<div class="bg-certificacao_iso"></div></a>
+							<a href="https://www.verdeghaia.com.br/desempenho-de-gestao/certificacoes-iso/"><h2>Certificação ISO</h2>
 						</div>
-						<a href="https://www.verdeghaia.com.br/desempenho-de-gestao/certificacoes-iso/ "><p>A busca pela certificação é um passo importante para destacar a empresa frente a seus concorrentes.</p></a>
+						<a href="https://www.verdeghaia.com.br/desempenho-de-gestao/certificacoes-iso/"><p>A busca pela certificação é um passo importante para destacar a empresa frente a seus concorrentes.</p></a>
 					</div>
 					<div class="submenu-column">
 						<div class="d-inline-flex">
 							<div class="bg-treinamentos"></div>
-							<h2>Treinamentos</h2>
+							<a href="https://ead.verdeghaia.com.br/"><h2>Treinamentos</h2></a>
 						</div>
 						<a href="https://ead.verdeghaia.com.br/"><p>Educação à distância, planos corporativos, mais de 50 temas da área.</p></a>
 					</div>
 					<div class="submenu-column">
 						<div class="d-inline-flex">
 							<div class="bg-consultoria_online"></div>
-							<h2>Consultoria Online</h2>							
+							<a href="https://www.consultoriaiso.org/"><h2>Consultoria Online</h2></a>
 						</div>
 						<a href="https://www.consultoriaiso.org/"><p>A solução certa para implantar um sistema de gestão e manter a sua certificação ISO, de um jeito simples e muito mais econômico.</p></a>
 					</div>

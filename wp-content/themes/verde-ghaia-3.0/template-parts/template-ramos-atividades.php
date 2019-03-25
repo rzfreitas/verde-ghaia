@@ -18,7 +18,7 @@
 		  			<h1><strong><?php the_field('title_banner'); ?></strong></h1>
 		   			<div class="p-t-25 p-b-25 l-disc"><?php the_field('text_banner'); ?></div>		   			
 		   			<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
-						<a href="" class="btn-round btn-ga">Contrate agora</a>
+						<a href="" class="btn-round btn-ga" data-toggle="modal" data-target="#alimentos">Contrate agora</a>
 						<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
 						<a href="" class="btn-round btn-va" data-toggle="modal" data-target="#aviacao">Contrate agora</a>
 						<?php elseif ( get_field('select_page') == 'cons_civil' ): ?>
@@ -136,9 +136,9 @@
 				</div>
 				<div class="col-12 col-md-3 p-t-c">
 					<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
-						<a href="" class="btn-round btn-ga">Baixar apresentação</a>
+						<a href="" class="btn-round btn-ga" data-toggle="modal" data-target="#alimentos">Baixar apresentação</a>
 						<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
-						<a href="" class="btn-round btn-va" data-toggle="modal" data-target="#aviacao">Saiba mais!</a>
+						<a href="" class="btn-round btn-va" data-toggle="modal" data-target="#saiba-mais-aviacao">Saiba mais!</a>
 						<?php elseif ( get_field('select_page') == 'cons_civil' ): ?>
 						<a href="" class="btn-round btn-cc">Contrate agora!</a>
 						<?php elseif ( get_field('select_page') == 'g_hosp' ): ?>
@@ -200,7 +200,7 @@
 			</div>
 			<div class="p-t-50 text-center">
 				<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
-					<a href="" class="btn-round btn-ga">Contrate agora</a>
+					<a href="" class="btn-round btn-ga"  data-toggle="modal" data-target="#alimentos">Contrate agora</a>
 					<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
 					<a href="" class="btn-round btn-va" data-toggle="modal" data-target="#aviacao">Contrate agora</a>
 					<?php elseif ( get_field('select_page') == 'cons_civil' ): ?>
@@ -231,6 +231,27 @@
 <?php endif; ?>
 
 <?php if ( get_field('select_page') == 'g_alimentos' ): ?>
+<!-- Modal Segurança de alimentos -->
+<div class="modal fade" id="alimentos" role="dialog">
+    <div class="modal-dialog">    
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Compliance Segurança de alimentos</h4>
+			</div>
+			<div class="modal-body">
+				 <div role="main" id="baixar-apresentacao-_seguranca-de-alimentos-993493eb7a6137d4f2e3"></div>
+				<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+				<script type="text/javascript">
+  				new RDStationForms('baixar-apresentacao-_seguranca-de-alimentos-993493eb7a6137d4f2e3-html', 'UA-96877999-1').createForm();
+				</script>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>      
+    </div>
+</div>
 						
 <?php elseif ( get_field('select_page') == 'aviacao' ): ?>
 <!-- Modal Aeroportos -->
@@ -247,6 +268,28 @@
 				<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
 				<script type="text/javascript">
 				  new RDStationForms('contrate-agora-aeroportos-6c4a37e55ff794c52a9e-html', 'UA-96877999-1').createForm();
+				</script>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>      
+    </div>
+</div>
+
+<!-- Saiba mais Aeroportos -->
+<div class="modal fade" id="saiba-mais-aviacao" role="dialog">
+    <div class="modal-dialog">    
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Saiba mais sobre Compliance Aeroportos</h4>
+			</div>
+			<div class="modal-body">				
+				<div role="main" id="saiba-mais-_-compliance-aeroporto-2335d2acc9e8e1e7e17e"></div>
+				<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+				<script type="text/javascript">
+				  new RDStationForms('saiba-mais-_-compliance-aeroporto-2335d2acc9e8e1e7e17e-html', 'UA-96877999-1').createForm();
 				</script>
 			</div>
 			<div class="modal-footer">

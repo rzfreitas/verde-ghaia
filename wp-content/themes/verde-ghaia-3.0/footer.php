@@ -111,7 +111,7 @@
 	</div>
 
 	<div class="visible-sm visible-xs">
-		<a href="https://web.whatsapp.com/send?phone=5531984218970&text=" class="click-wpp"></a>
+		<a href="https://app.whatsapp.com/send?phone=5531984218970&text=" class="click-wpp"></a>
 	</div>
 
 </div><!-- #page -->

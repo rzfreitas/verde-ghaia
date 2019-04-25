@@ -23,11 +23,41 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="bg-celeste">
-		<div class="container p-t-70 p-b-25">
+	<div class="">
+		<div class="container p-t-70 p-b-70">
 			<h2 class="p-b-50 text-center"><strong>Encontre uma Verde Ghaia perto de você:</strong></h2>
+			<div class="row contato-regioes p-t-50">
+				<div class="col-xs-12 col-md-3 text-center">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/contato/norte-fluminense.png" alt="norte fluminense">
+	      			<div class="p-t-20">
+	      				<p class="f-preta">Norte Fluminense - RJ</p>
+	      				<a href="mailto:nbacelette.nortefluminense@verdeghaia.com.br" target="_top" class="btn-blue">Entre em contato</a>
+	      			</div>
+				</div>
+				<div class="col-xs-12 col-md-3 text-center p-t-c">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/contato/guarulhos.png" alt="guarulhos">
+	      			<div class="p-t-20">
+	      				<p class="f-preta">Guarulhos - SP</p>
+	      				<a class="btn-blue" href="mailto:marcos.guarulhos@verdeghaia.com.br" target="_top">Entre em contato</a>
+	      			</div>
+				</div>
+				<div class="col-xs-12 col-md-3 text-center p-t-c">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/contato/porto-alegre.png" alt="porto alegre">
+		      		<div class="p-t-20">
+		      			<p class="f-preta">Porto Alegre - RS</p>
+		      			<a class="btn-blue" href="mailto:margeli.poa@verdeghaia.com.br" target="_top">Entre em contato</a>
+		      		</div>
+				</div>
+				<div class="col-xs-12 col-md-3 text-center p-t-c">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/contato/dourados.png" alt="dourados">
+		      		<div class="p-t-20">
+		      			<p class="f-preta">Dourados - MT</p>
+		      			<a class="btn-blue" href="mailto:douglas.dourados@verdeghaia.com.br" target="_top">Entre em contato</a>
+		      		</div>
+				</div>
+			</div>
 		</div>
-		<div class="contato-regioes">
+		<!-- <div class="contato-regioes">
 			<div class="container">
 				<ul class="nav nav-tabs">
 				    <li class="active"><a data-toggle="tab" href="#sudeste">Sudeste</a></li>
@@ -55,7 +85,7 @@ get_header(); ?>
 			      				<p class="f-preta">Campinas</p>
 			      				<a class="btn-blue" href="mailto:frederico.campinas@verdeghaia.com.br" target="_top">Entre em contato</a>
 			      			</div>
-			      		</div> -->
+			      		</div>
 			      		<div class="col-md-4">
 			      			<img src="<?php echo get_template_directory_uri(); ?>/assets/imagens/contato/guarulhos.png" alt="guarulhos">
 			      			<div class="p-t-20">
@@ -97,7 +127,7 @@ get_header(); ?>
 			       </div>
 			    </div>
 			 </div>
-		</div>
+		</div> -->
 	</div>
 </section>
 

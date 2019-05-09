@@ -65,7 +65,7 @@
 </section>
 
 <section>
-	<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
+	<?php if ( (get_field('select_page') == 'g_alimentos') ): ?>
 		<div class="bg-row-conversion-ga">
 			<div class="container p-t-25 p-b-25">
 				<ul class="d-flex align-mid f-wrap space-b d-flex-mob">
@@ -80,7 +80,7 @@
 				<?php else : endif; ?>
 			</div>
 		</div>
-		<?php elseif ( get_field('select_page') == 'aviacao' ): ?>
+		<?php elseif ( (get_field('select_page') == 'aviacao') || (get_field('select_page') == 'rodovias') ): ?>
 		<div class="bg-row-conversion">
 			<div class="container p-t-25 p-b-25">
 				<ul class="d-flex align-mid f-wrap space-b d-flex-mob">
@@ -215,7 +215,7 @@
 	</div>
 </section>
 
-<?php if ( get_field('select_page') == 'g_alimentos' || get_field('select_page') == 'rodovias'): ?>
+<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
 	<div class="container p-t-50 p-b-50">
 		<ul class="d-flex align-mid space-b f-wrap text-center slides-four">
 			<?php if( have_rows('logo_clientes_alimentos') ): ?>		    

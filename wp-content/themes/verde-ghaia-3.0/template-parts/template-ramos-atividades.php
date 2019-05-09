@@ -26,7 +26,7 @@
 						<?php elseif ( get_field('select_page') == 'g_hosp' ): ?>
 						<a href="" class="btn-round btn-gh">Contrate agora</a>
 						<?php elseif ( get_field('select_page') == 'rodovias' ): ?>
-						<a href="" class="btn-round btn-rod">Contrate agora</a>
+						<a href="" class="btn-round btn-rod">Agende uma demonstração</a>
 					<?php endif ?>
 			   	</div>
 			   	<div class="col-md-5">
@@ -208,14 +208,14 @@
 					<?php elseif ( get_field('select_page') == 'g_hosp' ): ?>
 					<a href="" class="btn-round btn-gh">Contrate agora</a>
 					<?php elseif ( get_field('select_page') == 'rodovias' ): ?>
-					<a href="" class="btn-round btn-rod">Contrate agora</a>
+					<a href="" class="btn-round btn-rod">SOLICITE UMA DEMONSTRAÇÃO</a>
 				<?php endif ?>
 			</div>
 		</div>
 	</div>
 </section>
 
-<?php if ( get_field('select_page') == 'g_alimentos' ): ?>
+<?php if ( get_field('select_page') == 'g_alimentos' || get_field('select_page') == 'rodovias'): ?>
 	<div class="container p-t-50 p-b-50">
 		<ul class="d-flex align-mid space-b f-wrap text-center slides-four">
 			<?php if( have_rows('logo_clientes_alimentos') ): ?>		    

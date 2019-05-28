@@ -6,7 +6,12 @@
  	<div class="m-t-50">
         <?php 
         $i = 0;
-        $aRecentPosts = new WP_Query("showposts=4");
+        $args = array(
+    		'posts_per_page' => 4,
+    		'ignore_sticky_posts' => 1
+		);
+
+        $aRecentPosts = new WP_Query($args);
         while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();?>
 
         <?php if($i % 2 == 0) { ?>
